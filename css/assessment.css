@@ -1,0 +1,55 @@
+img {
+    width: 120px;
+    margin-bottom: 15px;
+    /*Your code here*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    padding: 30px;
+    margin: 5px;
+    /* YOUR CODE HERE */
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body {
+    background-image: url('../images/back-ground.jpeg');
+}
+
+
+@media all and (min-width:360px) {
+    /* Phone */
+
+
+    #mystuff {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: 100px;
+    }
+}
+
+
+@media only screen and (min-width:720px) {
+
+    #mystuff {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: 100px;
+
+    }
+
+    section div:nth-child(2n) {
+        border: 2px solid black;
+    }
+    
+}
